@@ -30,7 +30,7 @@ requirements:
     - setuptools
     - setuptools-git-versioning
     - numpy
-    - libobjcryst 2024.2.1
+    - libobjcryst 2026.1
     - libboost-python-devel
   run:
     - python
