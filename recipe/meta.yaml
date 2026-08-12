@@ -1,6 +1,6 @@
 {% set name = "pyobjcryst" %}
-{% set version = "2025.1.0" %}
-{% set sha256 = "782c776de91d815cf74aff865fe002db99eff83a786c684dc9324460cd5fed5f" %}
+{% set version = "2026.1.0" %}
+{% set sha256 = "0ca642db5d534bf24efce9a9f6d7c2e45026f5b0691fecb7fe8e69118535786e" %}
 
 package:
   name: {{ name|lower }}
@@ -12,7 +12,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 2
+  number: 0
   script: {{ PYTHON }} -m pip install . --no-deps -vv
   skip: true  # [py<311]
 
@@ -30,7 +30,7 @@ requirements:
     - setuptools
     - setuptools-git-versioning
     - numpy
-    - libobjcryst 2026.1
+    - libobjcryst 2026.2.0
     - libboost-python-devel
   run:
     - python
